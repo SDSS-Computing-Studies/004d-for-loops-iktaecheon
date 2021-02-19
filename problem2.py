@@ -40,9 +40,9 @@ Invalid input
 x = int(input("Enter a number: "))
 answer = 1
 
-for i in range (1,x+1):
-    answer *= i
-if x < 0:
-    print("Invalid input")
-else:
+if x >= 0:
+    for i in range (1,x+1):
+        answer *= i
     print("{}! is {}".format(x,answer))
+elif x < 0:
+    print("Invalid input")
