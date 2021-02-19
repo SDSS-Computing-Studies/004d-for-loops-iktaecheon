@@ -37,12 +37,13 @@ example:
 Enter a number: -4
 Invalid input
 """
-x = int(input("Enter a number: "))
+x = float(input("Enter a number: "))
 answer = 1
 
-if x >= 0:
+if x >= 0 and x%1 == 0:
+    x = int(x)
     for i in range (1,x+1):
         answer *= i
     print("{}! is {}".format(x,answer))
-elif x < 0:
+else:
     print("Invalid input")
