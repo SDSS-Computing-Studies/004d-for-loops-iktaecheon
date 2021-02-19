@@ -22,3 +22,10 @@ enter a number:4
 ****
 
 """
+
+x = int(input("Enter a width and a height less than 10: "))
+
+for a in range(x):
+    for b in range (x):
+        print("*",end="")
+    print()
